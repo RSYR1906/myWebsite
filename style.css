@@ -15,15 +15,14 @@ section {
 
 /* Hero Section Styles */
 .hero {
-    height: 20vh;
+    height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color:#333 ;
     text-align: center;
     color: white;
-    font-style: oblique;
-    
+    font-style: oblique;    
   }
   
   .hero h1 {
@@ -32,7 +31,7 @@ section {
   }
   
   .hero p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 30px;
   }
   
