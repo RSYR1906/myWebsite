@@ -1,5 +1,5 @@
 body{
-    background-color: #f5f5dc; /* Light beige background color */
+    background-color: white; /* Light beige background color */
 
 }
 
@@ -13,15 +13,50 @@ section {
     text-align: center;
   }
 
+/* Global font settings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial', sans-serif; /* Adjust as needed */
+  font-weight: bold; /* Make headers bold */
+  color: black; /* Uniform color for all headers */
+  margin: 10px 0; /* Space above and below */
+  font-style: oblique;
+}
+
+/* Define font sizes for each header */
+h1 {
+  font-size: 6rem; /* Largest */
+}
+
+h2 {
+  font-size: 4rem; /* Large */
+}
+
+h3 {
+  font-size: 3rem; /* Medium */
+}
+
+h4, h5, h6 {
+  font-size: 2rem; /* Smaller */
+}
+
+/* Standardize paragraphs */
+p {
+  font-family: 'Arial', sans-serif; /* Ensure consistent font */
+  font-size: 1.2rem; /* Standard paragraph size */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 20px; /* Space below paragraphs */
+  color: rgb(4, 4, 190); /* Uniform color for paragraphs */
+}
+
 /* Hero Section Styles */
 .hero {
     height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#333 ;
+    background-color:beige ;
     text-align: center;
-    color: white;
+    color: rgb(4, 4, 190);
     font-style: oblique;    
   }
   
@@ -49,7 +84,7 @@ section {
 
   .separator {
     border: none; /* Remove default border */
-    height: 5px; /* Height of the line */
+    height: 2px; /* Height of the line */
     background-color: black; /* Color of the line */
     margin: 10px 0; /* Space around the line */
 }
@@ -61,7 +96,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #f5f5dc;
+    background-color: white;
     min-height: 10vh;
     text-align: center; /* Align text to the left */
   }
@@ -86,26 +121,30 @@ section {
   }
   
   .about h2 {
-    font-size: 2.5rem;
+    font-size: 30px;
     margin-bottom: 20px;
+    font-style: oblique;    
   }
   
   .about p {
-    font-size: 1.2rem;
-    max-width: 600px;
+    font-size: 27px;
+    max-width: 1000px;
     margin: 0 auto;
+    color: rgb(4, 4, 190);
+
   }
 
   /* Experience Section Styles */
 .experience {
     padding: 10px 0;
-    background-color: #f5f5dc;
+    background-color: white;
   }
   
   .experience h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
+    font-style: oblique;    
   }
   
   .experience-list {
@@ -116,7 +155,7 @@ section {
   
   .experience-item {
     width: 80%;
-    background-color: #f5f5dc;
+    background-color: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -136,19 +175,25 @@ section {
   }
   
   .experience-item p {
-    font-size: 1.2rem;
+    font-size: 20px;
+    color: rgb(4, 4, 190);
+
   }
   
   /* Projects Section Styles */
 .projects {
     padding: 10px 0;
-    background-color:#f5f5dc;
+    background-color:white;
   }
 
   .container{
-    font-size: large;
+    font-size: 25px;
   }
   
+  .container h2{
+    font-size: 25px;
+    font-style: oblique;
+  }
   .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -157,7 +202,7 @@ section {
   }
   
   .project-item {
-    background-color: #f5f5dc;
+    background-color: white;
     width:auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -181,10 +226,12 @@ section {
   .project-item p {
     font-size: 1.2rem;
     margin-bottom: 15px;
+    color: rgb(4, 4, 190);
+
   }
   
   .project-item a {
-    color: #007bff;
+    color: black;
     text-decoration: none;
   }
   
@@ -193,7 +240,7 @@ section {
   }
 
   .project-item2 {
-    background-color: #f5f5dc;
+    background-color:white;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -217,10 +264,12 @@ section {
   .project-item2 p {
     font-size: 1.2rem;
     margin-bottom: 15px;
+    color: rgb(4, 4, 190);
+
   }
   
   .project-item2 a {
-    color: #007bff;
+    color: black;
     text-decoration: none;
   }
   
@@ -232,7 +281,7 @@ section {
   /* Skills Section Styles */
 .skills {
     padding: 10px 0;
-    background-color:#f5f5dc;
+    background-color:white;
   }
   
   .skills h2 {
@@ -269,7 +318,7 @@ section {
 
 .skills a {
     text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Inherit the text color from the parent */
+    color: rgb(4, 4, 190); /* Inherit the text color from the parent */
     transition: color 0.3s; /* Optional: add a transition for color changes */
 }
 
@@ -287,10 +336,7 @@ section {
 .container {
     max-width: 600px; /* Limit the width of the container */
     margin: 0 auto; /* Center the container */
-}
-
-h2 {
-    margin-bottom: 20px; /* Space below the heading */
+    font-size: 22px;
 }
 
 .social-links {
@@ -315,7 +361,7 @@ h2 {
 
 /* Footer Styles */
 .footer {
-    background-color: #333;
+    background-color: beige;
     color: #f5f5dc;
     text-align: center;
     padding: 20px;
