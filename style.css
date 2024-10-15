@@ -15,7 +15,7 @@ section {
 
 /* Hero Section Styles */
 .hero {
-    height: 15vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
