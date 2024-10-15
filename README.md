@@ -1,0 +1,1 @@
+Creating a static website and launching it on Vercel

@@ -1,0 +1,327 @@
+body{
+    background-color: #f5f5dc; /* Light beige background color */
+
+}
+
+/* Apply Flexbox to all sections */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 10vh;  /* Ensure it fills the viewport vertically */
+    text-align: center;
+  }
+
+/* Hero Section Styles */
+.hero {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#333 ;
+    text-align: center;
+    color: white;
+    font-style: oblique;
+    
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta {
+    padding: 10px 30px;
+    background-color: #333;
+    color: #f5f5dc;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .cta:hover {
+    background-color: #555;
+  }
+
+  .separator {
+    border: none; /* Remove default border */
+    height: 5px; /* Height of the line */
+    background-color: black; /* Color of the line */
+    margin: 10px 0; /* Space around the line */
+}
+
+  /* About Me Styles */
+/* About Section Flexbox */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f5f5dc;
+    min-height: 10vh;
+    text-align: center; /* Align text to the left */
+  }
+  
+  /* About Text */
+  .about-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
+  }
+  
+  /* About Photo */
+  .about-photo {
+    margin-top: 20px;
+    flex: 0 0 100px; /* Keep the photo at 150px width */
+    text-align:center;
+  }
+  
+  .about-photo img {
+    width: 30%;
+    border-radius: 50%;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Experience Section Styles */
+.experience {
+    padding: 10px 0;
+    background-color: #f5f5dc;
+  }
+  
+  .experience h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .experience-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .experience-item {
+    width: 80%;
+    background-color: #f5f5dc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease, transform 0.3s ease; /* Add transition for smoothness */
+    transform: scale(0.95); /* Initial scale down */
+  }
+
+  .experience-item:hover{
+    transform: scale(1.05); /* Scale up on hover */
+    z-index: 1; /* Bring the hovered item to the front */
+  }
+  
+  .experience-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .experience-item p {
+    font-size: 1.2rem;
+  }
+  
+  /* Projects Section Styles */
+.projects {
+    padding: 10px 0;
+    background-color:#f5f5dc;
+  }
+
+  .container{
+    font-size: large;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .project-item {
+    background-color: #f5f5dc;
+    width:auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .project-item img {
+    width:25%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-item p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .project-item a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .project-item a:hover {
+    text-decoration: underline;
+  }
+
+  .project-item2 {
+    background-color: #f5f5dc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .project-item2 img {
+    width:5%;
+    height:50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .project-item2 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-item2 p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .project-item2 a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .project-item2 a:hover {
+    text-decoration: underline;
+  }
+ 
+
+  /* Skills Section Styles */
+.skills {
+    padding: 10px 0;
+    background-color:#f5f5dc;
+  }
+  
+  .skills h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  .skill h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .skills p {
+    font-size: 1.2rem;
+}
+
+.skills p i {
+    margin-right: 5px; /* Space between icon and text */
+    font-size: 1.5rem; /* Size of the icons */
+    color: inherit; /* Change color as desired */
+}
+
+.skills a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit the text color from the parent */
+    transition: color 0.3s; /* Optional: add a transition for color changes */
+}
+
+.skills a:hover {
+    color: #007bff; /* Change color on hover (optional) */
+}
+
+  
+/* Contact Section Styles */
+.contact {
+    padding: 20px; /* Add padding for the contact section */
+    text-align: center; /* Center the text and icons */
+}
+
+.container {
+    max-width: 600px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.social-links {
+    margin-top: 20px; /* Space above social links */
+}
+
+.social-links a {
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 15px; /* Space between icons */
+    color: #000; /* Default color for icons */
+    font-size: 40px; /* Increase icon size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-links a:hover {
+    color: #0077b5; /* Change color on hover for LinkedIn */
+}
+
+.social-links a .fa-github:hover {
+    color: #333; /* Change color on hover for GitHub */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #f5f5dc;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
